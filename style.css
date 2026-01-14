@@ -111,6 +111,34 @@ body {
 .window-content::-webkit-scrollbar-thumb:hover {
   background: #a0a0a0;
 }
+
+/* Image gallery styles */
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .gallery-item {
+      border: 2px solid #808080;
+      padding: 4px;
+      background: #fff;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-item p {
+      margin: 6px 0 0 0;
+      font-size: 12px;
+      text-align: center;
+    }
+    
 /* Taskbar */
 .taskbar {
   position: fixed;
