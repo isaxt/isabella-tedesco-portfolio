@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio Desktop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Desktop Icons -->
+  <div class="desktop">
+    <div class="icon" data-window="websites">
+      <img src="assets/computer.png" alt="">
+      <span>Websites</span>
+    </div>
+
+    <div class="icon" data-window="printed">
+      <img src="assets/books.png" alt="">
+      <span>Printed Media</span>
+    </div>
+
+    <div class="icon" data-window="installations">
+      <img src="assets/gameboy.png" alt="">
+      <span>Installations</span>
+    </div>
+
+    <div class="icon" data-window="textiles">
+      <img src="assets/yarn.png" alt="">
+      <span>Textiles</span>
+    </div>
+
+    <div class="icon" data-window="misc">
+      <img src="assets/floppy_disk.png" alt="">
+      <span>Miscellaneous</span>
+    </div>
+
+    <div class="icon" data-window="about">
+      <img src="assets/folder.png" alt="">
+      <span>About</span>
+    </div>
+ </div>
+
+ <div class="window" id="welcome">
+  <div class="title-bar">
+    <span>Welcome.txt</span>
+    <button class="close">✕</button>
+  </div>
+  <div class="window-content">
+    <h2>Welcome!</h2>
+    <p>
+      This site is structured like a desktop environment :)
+    </p>
+     <p> 
+      I design across digital and physical mediums– exploring where visual systems meet experiential space!
+     </p>
+     <p>
+      Click any icon to check out my work across websites, print, installations, textiles, and more!
+
+    </p>
+  </div>
+</div>
+
+  <!-- Windows -->
+  <div class="window" id="websites">
+    <div class="title-bar">
+      <span>Websites.txt</span>
+      <button class="close">✕</button>
+    </div>
+    <div class="window-content">
+      <h2>Websites</h2>
+      <p> 
+        <a href="https://isaxt.github.io/emerging-futures/"> techne||theos</a>
+        <br>
+        [write description here]
+     </p>
+     <p> 
+        <a href="https://isaxt.github.io/3101-assignment-3-clouds/"> overcast.exe</a>
+        <br>
+        [write description here]
+     </p>
+     <p> 
+        <a href="https://isaxt.github.io/city-as-system/"> Finance and Cigarette Culture commentary</a>
+        <br>
+        [write description here]
+     </p>
+     <p> 
+        <a href="https://isaxt.github.io/3101-assignment-3-clouds/"> overcast.exe</a>
+        <br>
+        [write description here]
+     </p>
+    </div>
+  </div>
+
+  <div class="window" id="printed">
+    <div class="title-bar">
+      <span>PrintedMedia.txt</span>
+      <button class="close">✕</button>
+    </div>
+    <div class="window-content">
+      <h2>Printed Media</h2>
+      <p>Posters, books, zines.</p>
+    </div>
+  </div>
+
+  <div class="window" id="installations">
+    <div class="title-bar">
+      <span>Installations.txt</span>
+      <button class="close">✕</button>
+    </div>
+    <div class="window-content">
+      <h2>Installations</h2>
+      <p>Spatial, interactive works.</p>
+    </div>
+  </div>
+
+  <div class="window" id="textiles">
+    <div class="title-bar">
+      <span>Textiles.txt</span>
+      <button class="close">✕</button>
+    </div>
+    <div class="window-content">
+      <h2>Textiles</h2>
+      <p>Knitted, woven, embroidered works.</p>
+    </div>
+  </div>
+
+  <div class="window" id="misc">
+    <div class="title-bar">
+      <span>Misc.txt</span>
+      <button class="close">✕</button>
+    </div>
+    <div class="window-content">
+      <h2>Miscellaneous</h2>
+      <p>Experiments, sketches, oddities.</p>
+    </div>
+  </div>
+
+  <div class="window" id="about">
+    <div class="title-bar">
+      <span>About.txt</span>
+      <button class="close">✕</button>
+    </div>
+    <div class="window-content">
+      <h2>Hello!</h2>
+      <p>
+       I’m Isabella– Isa for short! A *self-proclaimed* creative technologist, interdisciplinary designer, and multimedia artist. 
+      </p>
+      <p>
+        Originally from the Bay Area, I am currently based in New York City, where I study at Parsons School of Design. I’m majoring in [Design and Technology], and minoring in [Communication Design] and [Society, Technology, and Management].
+      </p>
+
+      <p>
+        My practice lives at the intersection of visual systems and experiential design, bridging digital interfaces with physical environments, strategic thinking with artistic exploration. I approach design as both a craft and a conversation, using computational tools and tactile materials to investigate fundamental questions of human experience. 
+      </p>
+
+      <p>
+        Through web design, interactive systems, and visual communication, I create work that examines our evolving relationship with technology. My process integrates design strategy with hands-on making, treating every project as an opportunity to reconsider how we navigate digital and physical spaces.
+      </p>
+
+      <p>
+        Whether designing for screens or surfaces, interfaces or installations, I'm interested in the conceptual space where algorithms meet handicraft. My work invites reflection on what it means to design—to be human—in an increasingly technological world.
+    </div>
+  </div>
+
+  <!-- Taskbar -->
+<div class="taskbar">
+  <button class="start-button">
+    <img src="assets/old_windows.png" alt="">
+    <span>Start</span>
+  </button>
+
+  <div class="taskbar-items">
+    <div class="taskbar-item active" id="welcome-task">
+  Welcome.txt
+</div>
+  </div>
+
+  <div class="taskbar-clock">20:44</div>
+</div>
+
+
+  <script src="home.js"></script>
+</body>
+</html>
