@@ -6,7 +6,7 @@ function openWindow(id) {
   const win = document.getElementById(id);
   if (!win) return;
 
-  win.style.display = "block";
+  win.classList.add("open");
   win.style.zIndex = zIndex++;
 }
 
@@ -14,7 +14,6 @@ function openWindow(id) {
 icons.forEach(icon => {
   icon.addEventListener("click", () => {
     const id = icon.dataset.window;
-    const win = document.getElementById(id);
     openWindow(id);
   });
 });
