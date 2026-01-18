@@ -132,6 +132,7 @@ body {
   height: auto;      /* let media keep its natural aspect ratio */
   max-width: 100%;   /* safety for videos */
   display: block;
+  margin-bottom: 8px;
 }
 
     .gallery-item p {
