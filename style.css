@@ -54,16 +54,29 @@ body {
 /* Window */
 .window {
   position: absolute;
-  top: 120px;
+  top: 80px;
   left: 200px;
-  width: 360px;
-  max-height: calc(100vh - 160px); /* Prevent window from going off screen */
+
+  width: min(900px, 85vw);   /* responsive width */
+  height: min(80vh, 700px);  /* taller windows */
+  
   background: #fff;
   border: 2px solid #000;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 0 #555;
-  visibility: hidden; /* Hide by default instead of display: none */
+  visibility: hidden;
+}
+
+/* Make ONLY welcome + about windows smaller */
+#welcome,
+#about {
+  width: 360px;
+  height: auto;          /* content defines height */
+  max-height: 500px;     /* prevents overly tall window */
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .window.open {
@@ -87,11 +100,12 @@ body {
 }
 
 .window-content {
-  padding: 12px;
-  font-size: 14px;
-  overflow-y: auto; /* Enable vertical scrolling */
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  flex: 1; /* Allow content to take remaining space */
+  padding: 16px;
+  font-size: 16px; /* was 14px */
+  line-height: 1.5;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
 }
 
 /* Custom scrollbar styling for Windows look */
@@ -120,19 +134,28 @@ body {
       margin-top: 12px;
     }
 
-    .gallery-item {
-      border: 2px solid #808080;
-      padding: 4px;
-      background: #fff;
-    }
+    .window-content .gallery-item {
+  border: 2px solid #808080;
+  padding: 8px;
+  background: #fff;
+}
+
+/* GRID layout for galleries */
+.window-content {
+  display: block;
+}
+
+.window-content .gallery-item + .gallery-item {
+  margin-top: 16px;
+}
 
 .gallery-item img,
 .gallery-item video {
   width: 100%;
-  height: auto;      /* let media keep its natural aspect ratio */
-  max-width: 100%;   /* safety for videos */
+  max-height: 500px;   /* prevents giant videos */
+  object-fit: contain; /* keeps proportions */
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
     .gallery-item p {

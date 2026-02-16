@@ -77,3 +77,12 @@ if (welcomeTask) {
     openWindow("welcome");
   });
 }
+
+// Click media to toggle fullscreen
+document.querySelectorAll(".gallery-media, .gallery-item img").forEach(media => {
+  media.addEventListener("click", () => {
+    if (media.requestFullscreen) {
+      media.requestFullscreen();
+    }
+  });
+});
