@@ -32,12 +32,31 @@ body {
   padding-bottom: 56px; /* taskbar space */
 }
 
+/* Right-side icon column */
+.desktop-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  display: grid;
+  grid-template-columns: 80px;
+  row-gap: 24px;
+
+  padding-bottom: 56px; /* taskbar space */
+}
+
+
 .icon {
   width: 72px;
   text-align: center;
   cursor: pointer;
   color: rgb(255, 255, 255);
   user-select: none;
+}
+
+/* Right-side icons use black text */
+.desktop-right .icon {
+  color: #000;
 }
 
 .icon img {
@@ -50,6 +69,7 @@ body {
   margin-top: 4px;
   font-size: 12px;
 }
+
 
 /* Window */
 .window {
